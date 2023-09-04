@@ -19,7 +19,7 @@ document.getElementById("registro-form").addEventListener("submit", function(eve
     
     .then(response => response.json())
     .then(data => {
-        console.log("Servidor:", datos);
+        console.log("Servidor:", data, datos);
         alert("Registro Exitoso.")
     })
     .catch(error => {
